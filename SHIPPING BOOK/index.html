@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>VanBook</h1>
+            <button id="cart-btn">سلة المشتريات (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- رسالة تخبر الزبون بالنزول إلى أسفل الموقع -->
+        <p class="scroll-message">لإتمام طلبك، يرجى النزول إلى أسفل الموقع.</p>
+
+        <div class="container">
+            <select id="filter-category">
+                <option value="all">كل الفئات</option>
+                <option value="novel">روايات</option>
+                <option value="education">تعليمية</option>
+                <option value="history">تاريخية</option>
+            </select>
+        </div>
+
+        <section class="products container">
+            <!-- الكتاب الأول -->
+            <div class="product" data-category="novel">
+                <img src="https://s3.amazonaws.com/jarir-files/images/original/7233.jpg" alt="الأب الغني والأب الفقير">
+                <h2>الأب الغني والأب الفقير</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: يتناول الفرق بين التفكير المالي للأغنياء والفقراء.</p>
+                <button class="details-btn" data-id="1">تفاصيل</button>
+                <button class="add-to-cart" data-id="1">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب الثاني -->
+            <div class="product" data-category="education">
+                <img src="https://mokabook.net/wp-content/uploads/2022/12/57686676.jpg" alt="سيكولوجيا المال">
+                <h2>سيكولوجيا المال</h2>
+                <p>السعر: 55 DH</p>
+                <p>وصف الكتاب: تحليل عميق لعلم النفس المالي وكيف يؤثر في حياتنا.</p>
+                <button class="details-btn" data-id="2">تفاصيل</button>
+                <button class="add-to-cart" data-id="2">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب الثالث -->
+            <div class="product" data-category="history">
+                <img src="https://www.noor-book.com/publice/covers_cache_webp/13/8/9/6/0615997eeb8960938dafc682c5ed96d4.png.webp" alt="فكر وازداد ثراء">
+                <h2>فكر وازداد ثراء</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: دليل لتحقيق النجاح المالي من خلال تغيير طريقة تفكيرك.</p>
+                <button class="details-btn" data-id="3">تفاصيل</button>
+                <button class="add-to-cart" data-id="3">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب الرابع -->
+            <div class="product" data-category="novel">
+                <img src="https://jalyss.com/544-large_default/assrare-aakle-almelioneur.jpg" alt="اسرار عقل المليونير">
+                <h2>اسرار عقل المليونير</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: استراتيجيات عقلية للنجاح المالي وتحقيق الثروة.</p>
+                <button class="details-btn" data-id="4">تفاصيل</button>
+                <button class="add-to-cart" data-id="4">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب الخامس -->
+            <div class="product" data-category="education">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1441287700i/9753375.jpg" alt="أرض زيكولا">
+                <h2>أرض سيكولا</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: مغامرة في عالم خيالي حيث تختلط الأساطير بالواقع.</p>
+                <button class="details-btn" data-id="5">تفاصيل</button>
+                <button class="add-to-cart" data-id="5">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب السادس -->
+            <div class="product" data-category="history">
+                <img src="https://www.neelwafurat.com/images/eg/abookstore/covers/normal/221/221982.jpg" alt="امريتا">
+                <h2>امريتا</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: رحلة اكتشاف الذات في عالم مليء بالألغاز.</p>
+                <button class="details-btn" data-id="6">تفاصيل</button>
+                <button class="add-to-cart" data-id="6">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب السابع -->
+            <div class="product" data-category="education">
+                <img src="https://alfagrbookstore.com/image/cache/catalog/products/537/New%20Doc%202021-06-24%2012.16.30_21-400x400.jpg" alt="رسائل من القرآن">
+                <h2>رسائل من القرآن</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: تفسير عميق للآيات القرآنية وتأثيرها على حياتنا.</p>
+                <button class="details-btn" data-id="7">تفاصيل</button>
+                <button class="add-to-cart" data-id="7">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب الثامن -->
+            <div class="product" data-category="novel">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630551327i/58566586.jpg" alt="جلسات نفسية">
+                <h2>جلسات نفسية</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: استراتيجيات نفسية لتحسين الحياة اليومية.</p>
+                <button class="details-btn" data-id="8">تفاصيل</button>
+                <button class="add-to-cart" data-id="8">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب التاسع -->
+            <div class="product" data-category="history">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1663593678i/62636483.jpg" alt="إن الله معنا">
+                <h2>إن الله معنا</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: قصص واقعية عن الثقة بالله في الأوقات الصعبة.</p>
+                <button class="details-btn" data-id="9">تفاصيل</button>
+                <button class="add-to-cart" data-id="9">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب العاشر -->
+            <div class="product" data-category="education">
+                <img src="https://watanbooks.com/wp-content/uploads/2023/02/296-510x510.jpg" alt="على خطا الرسول صلى الله عليه وسلم">
+                <h2>على خطا الرسول صلى الله عليه وسلم</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: حياة النبي محمد صلى الله عليه وسلم من خلال دروس الحياة.</p>
+                <button class="details-btn" data-id="10">تفاصيل</button>
+                <button class="add-to-cart" data-id="10">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب الحادي عشر -->
+            <div class="product" data-category="novel">
+                <img src="https://watanbooks.com/wp-content/uploads/2023/03/%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%AD%D8%A8%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D9%86%D8%B3%D9%8A%D8%A9-1-510x510.jpg" alt="وادي الذئاب المنسية">
+                <h2>وادي الذئاب المنسية</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: رواية مغامرة في البراري والمجهول.</p>
+                <button class="details-btn" data-id="11">تفاصيل</button>
+                <button class="add-to-cart" data-id="11">إضافة للسلة</button>
+            </div>
+
+            <!-- الكتاب الثاني عشر -->
+            <div class="product" data-category="history">
+                <img src="https://cdn.abjjad.com/pub/b5a7f5bb-77a8-453b-97e7-817123d6b689-192X290.png" alt="فاتتني صلاة">
+                <h2>فاتتني صلاة</h2>
+                <p>السعر: 50 DH</p>
+                <p>وصف الكتاب: تفكير عميق حول الصلاة وأثرها على الروح والعقل.</p>
+                <button class="details-btn" data-id="12">تفاصيل</button>
+                <button class="add-to-cart" data-id="12">إضافة للسلة</button>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="order-form">
+        <h2>إتمام الطلب</h2>
+        <form id="orderForm" method="POST" action="https://formspree.io/f/meoekgzp">
+            <label for="customer-name">الاسم الكامل:</label>
+            <input type="text" id="customer-name" name="customer_name" required>
+
+            <label for="customer-phone">رقم الهاتف:</label>
+            <input type="tel" id="customer-phone" name="customer_phone" required>
+
+            <input type="hidden" id="cart-data" name="cart_data">
+
+            <button type="submit">إرسال الطلب</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
